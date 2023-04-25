@@ -1,9 +1,10 @@
 ---
 - project:
     merge-mode: squash-merge
+    default-branch: main
     check:
       jobs:
-        - otc-terraform-lint
+        - otc-golangci-lint
     gate:
       jobs:
-        - otc-terraform-lint
+        - otc-golangci-lint
