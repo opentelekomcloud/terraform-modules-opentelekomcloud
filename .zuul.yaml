@@ -3,7 +3,7 @@
     merge-mode: squash-merge
     check:
       jobs:
-        - otc-terraform-lint
+        - tflint
     gate:
       jobs:
-        - otc-terraform-lint
+        - tflint
