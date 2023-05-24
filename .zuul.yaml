@@ -11,6 +11,7 @@
     check:
       jobs:
         - modules-tflint
+        - otc-terraform-module-publish
     gate:
       jobs:
         - modules-tflint
