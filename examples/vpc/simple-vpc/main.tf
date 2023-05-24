@@ -18,7 +18,6 @@ module "vpc" {
   dhcp_enable = true
   snat_enable = true
 
-
   tags = {
     dev        = "vpc_infra",
     simple-vpc = "example"
