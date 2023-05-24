@@ -4,7 +4,7 @@ provider "opentelekomcloud" {
 }
 
 module "vpc" {
-  source = "../../../modules/vpc"
+  source = "git::git@github.com:opentelekomcloud/terraform-opentelekomcloud-project-factory.git//modules/vpc?ref=v0.0.1"
 
   prefix = "simple-example"
 

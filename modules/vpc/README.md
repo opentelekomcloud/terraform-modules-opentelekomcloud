@@ -15,7 +15,7 @@ Terraform 1.4.6 and newer.
 
 ```hcl
 module "vpc" {
-  source = "terraform-opentelekomcloud-modules/vpc/opentelekomcloud"
+  source = "git::git@github.com:opentelekomcloud/terraform-opentelekomcloud-project-factory.git//modules/vpc?ref=v0.0.1"
 
   prefix = "infra"
   cidr   = "10.0.0.0/16"
