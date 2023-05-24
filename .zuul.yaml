@@ -4,7 +4,7 @@
     default-branch: main
     check:
       jobs:
-        - tflint
+        - otc-golangci-lint
     gate:
       jobs:
-        - tflint
+        - otc-golangci-lint
