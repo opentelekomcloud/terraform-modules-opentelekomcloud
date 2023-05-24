@@ -1,10 +1,16 @@
 ---
+- job:
+    name: tflint
+    parent: golang-make
+    vars:
+      make_command: tflint
+
 - project:
     merge-mode: squash-merge
     default-branch: main
     check:
       jobs:
-        - otc-golangci-lint
+        - tflint
     gate:
       jobs:
-        - otc-golangci-lint
+        - tflint

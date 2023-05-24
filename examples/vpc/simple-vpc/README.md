@@ -29,7 +29,7 @@ No providers.
 
 | Name                              | Source | Version |
 |-----------------------------------|--------|---------|
-| <a name="module_vpc"></a> [vpc]() | ../../ |         |
+| <a name="module_vpc"></a> [vpc]() | ../../ | 0.0.1   |
 
 ## Resources
 

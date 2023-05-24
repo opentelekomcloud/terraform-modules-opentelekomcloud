@@ -9,3 +9,6 @@ tffmtfix: tools
 	@find ./ -type f -name "*.tf" | sort | while read f; do terrafmt fmt -f $$f; done
 	@echo "==> Fixing docs terraform blocks code with terrafmt..."
 	@find ./ -type f -name "*.md" | sort | while read f; do terrafmt fmt $$f; done
+
+tflint: tools
+	./scripts/run-tflint.sh
