@@ -1,3 +1,7 @@
+SHELL=/bin/bash
+
+export PATH:=/usr/local/go/bin:~/go/bin/:$(PATH)
+
 default: tffmtfix
 
 tools:
