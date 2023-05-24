@@ -1,9 +1,10 @@
 ---
 - project:
     merge-mode: squash-merge
+    default-branch: main
     check:
       jobs:
-        - otc-terraform-lint
+        - tflint
     gate:
       jobs:
-        - otc-terraform-lint
+        - tflint
