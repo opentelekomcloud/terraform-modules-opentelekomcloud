@@ -1,6 +1,6 @@
 ---
 - job:
-    name: tflint
+    name: modules-tflint
     parent: golang-make
     vars:
       make_command: tflint
@@ -10,7 +10,7 @@
     default-branch: main
     check:
       jobs:
-        - tflint
+        - modules-tflint
     gate:
       jobs:
-        - tflint
+        - modules-tflint
